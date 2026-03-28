@@ -23,7 +23,7 @@ const services = [
   {
     icon: <FiMonitor size={32} />,
     title: 'Editing Services',
-    description: 'Professional color grading, album designing, and video editing for existing footage.',
+    description: 'Professional color grading, album designing, and video editing for the footage.',
     price: 'Starting at ₹10,000',
   },
 ];
@@ -42,12 +42,12 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-zinc-950 border border-zinc-800 rounded-2xl p-8 hover:border-amber-500/50 transition-colors group relative overflow-hidden"
             >
               <div className="absolute top-0 left-0 w-2 h-0 bg-amber-500 transition-all duration-300 group-hover:h-full" />
-              
+
               <div className="text-amber-500 mb-6 bg-amber-500/10 w-16 h-16 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                 {service.icon}
               </div>
